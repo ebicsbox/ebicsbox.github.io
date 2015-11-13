@@ -4,14 +4,15 @@ $to = 'jan@railslove.com'; // Change your email address
 
 
 $name = $_POST['name'];
-$subject = $_POST['subject'];
+$phone = $_POST['phone'];
+$bic = $_POST['bic'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
 
 // Email Submit
 // Note: filter_var() requires PHP >= 5.2.0
- if ( isset($email) && isset($name) && isset($subject) && isset($message) && filter_var($email, FILTER_VALIDATE_EMAIL) ) {
+ if ( isset($email) && isset($name) && isset($phone) && isset($bic) && isset($message) && filter_var($email, FILTER_VALIDATE_EMAIL) ) {
  
   // detect & prevent header injections
   $test = "/(content-type|bcc:|cc:|to:)/i";
@@ -22,7 +23,7 @@ $message = $_POST['message'];
   }
 
 $body = <<<EMAIL
-subject : $subject
+subject : EBICS:Box
   
 My name is, $name.
 
@@ -30,6 +31,8 @@ $message
 
 From : $name
 Email : $email
+Phone : $phone
+BIC : $bic
 
 EMAIL;
   
