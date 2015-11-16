@@ -176,7 +176,7 @@
     font-size: 14px;
     font-weight: 300;
     margin: 0px 0 10px 0;
-    color: #345;
+    color: #030405;
     letter-spacing: 1px;
   }
 
@@ -188,11 +188,11 @@
 
   p.lead.title {
     margin-top: 20px;
-    font-size:29px;
+    font-size:37px;
   }
 
   p.dark, .dark, a.dark, h1.dark, h2.dark, h3.dark, h4.dark, h5.dark, h6.dark {
-    color: #323232 !important;
+    color: #030405 !important;
   }
 
   p.white, .white, a.white, h1.white, h2.white, h3.white, h4.white, h5.white, h6.white {
@@ -1540,58 +1540,22 @@
       /*==============================================================================================*/
 
       .footer {
-        background-color: #f7f7f7;
-        color: #323232;
-        position: relative;
-        width: 100%;
-        display: block;
-      }
-
-      .footer hr {
-        border-color: #eee;
-      }
-
-      .footer .footer-info p {
-        color: #323232;
-      }
-
-      .footer-logo {
-        max-width: 125px;
-        display: inline-block;
-        width: 100%;
-      }
-
-      .footer .social, .contact .social {
-        font-size: 20px;
-      }
-
-      .footer ul {
-        list-style: none;
-        margin: 0px;
         padding: 0px;
-      }
-
-      .footer ul.social li, .contact ul.social li {
-        display: inline-block;
-        margin: 0 10px 0 0;
-      }
-
-      .footer .link a {
-        font-size: 12px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-      }
-
-      .footer .link-small a {
-        font-weight: 600;
-        text-transform: none;
-      }
-
-      .footer .copyright {
+        padding-top:30px;
+        background-color: #030405;
+        width: 100%;
+        height: 70px;
         text-align: center;
       }
 
+      .footer a {
+        font-size:17px;
+        color: white;
+      }
+
+      .footer a:hover {
+        color: #f7f7f7;
+      }
 
       .newsletter {
         position: relative;
@@ -1614,11 +1578,6 @@
         background: rgba(255,255,255,0);
       }
 
-      @media (max-width: 767px) {
-        .footer {
-          text-align: center;
-        }
-      }
       /*================================================================================================*/
       /* ELEMENTS          ||---------------------------- */
       /*================================================================================================*/
@@ -2336,6 +2295,86 @@
         }
         .cont-h-100per {
           height:100%;
+        }
+
+        section#about {
+          background: white;
+        }
+
+        section#features {
+          background:linear-gradient(to right, #65B6B3, #5A8B9B);
+        }
+
+        section#features p, section#features h3, section#features h5, section#features h3:after{
+          color: white;
+        }
+
+
+        @media (min-width: 767px){
+          section#features .row > div:not(:first-child):not(:nth-child(3)) {
+            border-left: 1px solid white;
+          }
+        }
+
+        @media (min-width: 991px){
+          section#features .row > div:not(:first-child) {
+            border-left: 1px solid white;
+          }
+        }
+
+
+        section#use {
+          background: white;
+        }
+
+        section#use ul {
+          list-style-position: inside;
+        }
+
+        section#use li {
+          color: #65B6B3;
+        }
+
+
+        section#use li p {
+          color: #030405; 
+        }
+
+        section#safety {
+          background-color: #f7f7f7;
+        }
+
+        section#solutions {
+          background-color: white;
+        }
+
+        section#social {
+          background-color: #f7f7f7;
+        }
+
+        section#contact {
+          background-color: white;
+        }
+
+        section#contact-info {
+          background-color: #f7f7f7;
+        }
+
+        .lock-item {
+          border-radius: 50px 50px 50px 50px; 
+          width: 100px; 
+          height: 100px; 
+          background-color: #030405; 
+          margin: 0 auto;
+          margin-top: 10px;
+          margin-bottom: 20px;
+        }
+
+        .lock-item i{
+          color: #f7f7f7;
+          height: 100px;
+          line-height: 100px;
+          white-space: nowrap;
         }
 
         /*backround images*/
