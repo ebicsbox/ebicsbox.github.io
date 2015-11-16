@@ -2218,6 +2218,11 @@
           background-color: white;
         }
 
+        section#solutions .row:first-child h2{
+          color: #65B6B3;
+          font-weight: bold;
+        }
+
         @media (min-width: 992px){
           section#solutions .row > div:not(:first-child) {
             border-left: 1px solid black;
