@@ -189,6 +189,8 @@
   p.lead.title {
     margin-top: 20px;
     font-size:37px;
+    color: #fff;
+    line-height: 45px;
   }
 
   /*Headings Style   ||-----------*/
@@ -2179,13 +2181,13 @@
           color: white;
         }
 
-        @media (min-width: 767px){
+        @media (min-width: 768px){
           section#features .row > div:not(:first-child):not(:nth-child(3)) {
             border-left: 1px solid white;
           }
         }
 
-        @media (min-width: 991px){
+        @media (min-width: 992px){
           section#features .row > div:not(:first-child) {
             border-left: 1px solid white;
           }
@@ -2216,13 +2218,7 @@
           background-color: white;
         }
 
-        @media (min-width: 970px){
-          section#solutions .row > div:not(:first-child):not(:nth-child(3)) {
-            border-left: 1px solid black;
-          }
-        }
-
-        @media (min-width: 1200px){
+        @media (min-width: 992px){
           section#solutions .row > div:not(:first-child) {
             border-left: 1px solid black;
           }
