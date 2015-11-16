@@ -2309,7 +2309,6 @@
           color: white;
         }
 
-
         @media (min-width: 767px){
           section#features .row > div:not(:first-child):not(:nth-child(3)) {
             border-left: 1px solid white;
@@ -2321,7 +2320,6 @@
             border-left: 1px solid white;
           }
         }
-
 
         section#use {
           background: white;
@@ -2346,6 +2344,18 @@
 
         section#solutions {
           background-color: white;
+        }
+
+        @media (min-width: 970px){
+          section#solutions .row > div:not(:first-child):not(:nth-child(3)) {
+            border-left: 1px solid black;
+          }
+        }
+
+        @media (min-width: 1200px){
+          section#solutions .row > div:not(:first-child) {
+            border-left: 1px solid black;
+          }
         }
 
         section#social {
@@ -2838,35 +2848,6 @@
 
   .equalizer > div{
     margin-top: 20px;
-  }
-
-  .item-box {
-    position: relative;
-    overflow: hidden;
-    display: block;
-    border-top: 5px solid #78d1c1;
-    border-bottom: 20px solid #00CB7A;
-    background-color: white;
-  }
-
-  .item-box a {
-    display: inline-block;
-  }
-
-  .item-box:hover .item-mask {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .item-box:hover .item-mask .item-caption {
-    bottom: 30px;
-    opacity: 1;
-  }
-
-  .item-box:hover .item-container {
-    transform: scale(1.1);
-    transition: all 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
-    width: 100%;
   }
 
   .item-container {
