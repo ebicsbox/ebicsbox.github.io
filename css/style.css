@@ -6,44 +6,6 @@
 @import url("./plugin/jquery.fs.tipper.css");
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
 
-/* 
-* BASIC STYLE
-  - General Style    
-  - Headings Style    
-  - Button Style    
-  - Form Style    
-  - Spacer Style
-      
-* HEADER 
-  - Header Style
-  - Navigation Menu
-  - Right Side Menu Button (Search, Cart, Bar, etc)
-
-* FOOTER
-
-* ELEMENTS
-  - Team Box
-  - Skills Bar
-  - Accordion Tab
-  - Counter
-  - Service Box
-  - Pricing
-  - Testimonials
-  - Client Logo
-  - Icon
-  - Table
-  
-* GLOBAL STYLES
-  - Push Menu Style (Top, Bottom, Left, right)
-  - Contents (Body, Container, Section, etc)
-  - Contants (Portfolio, Blog, Shop etc)
-  - Parallax
-  - Slider
-  - Preloader
-  - Additional
-  */
-
-
   /*-------------------------------------------------------------------------------------------*/
   /* BASIC STYLE    ||---------------------------- */
   /*-------------------------------------------------------------------------------------------*/
@@ -1412,25 +1374,31 @@
       /*==============================================================================================*/
 
       .footer {
-        padding: 0px;
-        padding-top:30px;
+        padding: 30px 0;
         background-color: #030405;
-        width: 100%;
-        height: 70px;
         text-align: center;
       }
 
-      .footer a {
-        font-size:17px;
-        color: white;
-      }
-
       .footer a:hover {
-        color: #f7f7f7;
+        font-size:17px;
+        color: #ccc;
+        margin: 0 20px;
       }
 
-      .newsletter {
-        position: relative;
+
+      .footer p {
+        margin: 30px auto;
+        max-width: 900px;
+      }
+
+      .footer p, .footer h2, .footer .container a{
+        color: white;
+        margin: 5px 0;
+      }
+
+      .footer .container a {
+        color: #65B6B3;
+        margin: 0;
       }
 
       .newsletter .newsletter-input, .newsletter .newsletter-input:focus {
@@ -2193,25 +2161,15 @@
           }
         }
 
-        section#use {
-          background: white;
-        }
-
-        section#use ul {
-          list-style-position: inside;
-        }
-
-        section#use li {
-          color: #65B6B3;
-        }
-
-
-        section#use li p {
-          color: #030405; 
-        }
-
-        section#safety {
+        section#use{
           background-color: #f7f7f7;
+          font-size: 1.4em;
+        }
+        
+        section#use .row div:nth-child(2) {
+          -webkit-column-count: 2; /* Chrome, Safari, Opera */
+          -moz-column-count: 2; /* Firefox */
+          column-count: 2;
         }
 
         section#solutions {
@@ -2223,22 +2181,27 @@
           font-weight: bold;
         }
 
+        section#solutions .row:first-child a h2:hover{
+          color: #358683;
+          font-weight: bold;
+        }
+
         @media (min-width: 992px){
           section#solutions .row > div:not(:first-child) {
             border-left: 1px solid black;
           }
         }
 
+        section#contact-form {
+          background-color: white;
+        }
+
         section#social {
           background-color: #f5f9ee;
         }
 
-        section#contact {
-          background-color: white;
-        }
-
         section#contact-info {
-          background-color: #f7f7f7;
+          background-color: #f5f9ee;
         }
 
         .lock-item {
