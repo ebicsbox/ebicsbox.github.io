@@ -1379,6 +1379,11 @@
         text-align: center;
       }
 
+      .footer a {
+        font-size: 15px;
+        color: #666;
+      }
+
       .footer a:hover {
         font-size:17px;
         color: #ccc;
@@ -2187,6 +2192,12 @@
         }
 
         @media (min-width: 992px){
+          section#solutions .row > div:not(:first-child):not(:nth-child(3)) {
+            border-left: 1px solid black;
+          }
+        }
+
+        @media (min-width: 1200px){
           section#solutions .row > div:not(:first-child) {
             border-left: 1px solid black;
           }
